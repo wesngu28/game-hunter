@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
 .header {
   text-align: center;
   margin: 60px 0;
+  color: white;
+  font-family: 'Signika', sans-serif;
 }
 
 .header h1, .header h2 {

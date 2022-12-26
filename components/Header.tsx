@@ -5,9 +5,9 @@ export default function Header() {
     <header className={styles.header}>
       <h1>
         <span>Game Stats</span>
-        <span>Done Quick</span>
+        <span>Dashboard</span>
       </h1>
-      <h2>Twitch and potentially Steam</h2>
+      <h2>Details, Streams, and Prices</h2>
     </header>
   );
 }

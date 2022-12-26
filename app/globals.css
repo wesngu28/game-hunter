@@ -3,5 +3,6 @@ html, body {
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
-  background-color: gray;
+  background-color: #757575;
+  margin: 0;
 }
