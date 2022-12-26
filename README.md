@@ -1,7 +1,5 @@
-Meant to mainly learn and apply some testing principles. Was using Jest with React Testing. The main idea of the project is to allow the user to input a game, which will make a request to Steam to display data from Steam. This requires two fetch calls, one to get all games, and then get the ID from the game to make a fetch call for that specific game. An independent fetch with the same game input is made to Twitch, to get the ID and then to get the top streamers. I then would want to query something like isthereanydeal's API.
+# Game Project
 
-The end product would have been a dashboard for a game containing data for Steam if the game exists on Steam, the top 3 current Twitch streamers, and data for the game's price if it is not a free game.
+The main idea of the project is to allow the user to input a game, which will make a request to Steam to display data from Steam. This requires two fetch calls, one to get all games, and then get the ID from the game to make a fetch call for that specific game. An independent fetch with the same game input is made to Twitch, to get the ID and then to get the top streamers. I then would want to query something like isthereanydeal's API.
 
-The main issue I had was being rate-limited by Steam due to to the size of the game fetch. However, I already got hat I kind of wanted out of this, which was to get some more practice with testing, and especially with a component front-end framework, since most of my prior practice with testing was on actual functions.
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Meant to mainly learn and apply some testing principles. I intended to only test the initial Form input, as I mainly just wanted to get some familiarity with Jest and intend to mainly focus on Cypress. I ran into issues with somehow being rate-limited or blocked by the Steam API (before storing their result in my own json) due to a test I wrote, which was probably my error.
