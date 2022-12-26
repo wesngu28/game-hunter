@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { twitchObject } from '../../models/twitchObject'
 
 const twitchToken = async (req: NextApiRequest, res: NextApiResponse) => {
   try{
@@ -17,6 +18,7 @@ const twitchToken = async (req: NextApiRequest, res: NextApiResponse) => {
       }
     })
     const gameJson = await getGame.json()
+    console.log(gameJson)
     const id = gameJson.data[0].id
 
     const getStream = await fetch(`https://api.twitch.tv/helix/streams?game_id=${id}`, {
@@ -27,7 +29,8 @@ const twitchToken = async (req: NextApiRequest, res: NextApiResponse) => {
       }
     })
 
-    const streamJson = await getStream.json()
+    const streamJson: twitchObject = await getStream.json()
+    streamJson.img = gameJson.data[0].box_art_url
     return res.status(200).json(streamJson)
   } catch (err) {
     return res.status(200).json({ error: `Something went wrong, ${err}`})

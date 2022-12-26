@@ -2,10 +2,10 @@
 
 import { FormEvent, useContext, useState } from "react";
 import { itadObject } from "../models/itadObject";
-import { steamStoreAPIObject } from "../models/steamStoreAPI";
 import { twitchObject } from "../models/twitchObject";
 import { GameContext } from "../contexts/GameProvider";
 import styles from "../styles/Form.module.css"
+import { AppInfo } from "../models/steamStoreAPI";
 
 export default function Form() {
   const [text, setText] = useState("");
@@ -27,21 +27,25 @@ export default function Form() {
       const game = await fetch(
         `https://store.steampowered.com/api/appdetails?appids=${matchingApp.appid}`
       );
-      const gamer: steamStoreAPIObject = await game.json();
-      gameContext!.setSteam(gamer);
+      const gamer: AppInfo = await game.json();
+      gameContext!.setSteam(gamer[matchingApp.appid]);
+      console.log(gamer)
     }
 
     const twitch = await fetch(`/api/twitch?game=${text}`);
     const twitchJson: twitchObject | { error: string } = await twitch.json();
     if (twitchObjectChecker(twitchJson)) {
       gameContext!.setTwitch(twitchJson);
+      console.log(twitchJson)
     }
 
     const itad = await fetch(`/api/itad?game=${text}`);
     const itadJson: itadObject = await itad.json();
     if (!Object.keys(itadJson.data).includes("undefined")) {
       gameContext!.setITAD(itadJson);
+      console.log(itadJson)
     }
+    gameContext!.setInput(text);
   }
 
   return (

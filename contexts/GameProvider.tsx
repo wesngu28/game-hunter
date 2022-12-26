@@ -2,7 +2,7 @@
 
 import { createContext, useState } from 'react'
 import { itadObject } from '../models/itadObject'
-import { steamStoreAPIObject } from '../models/steamStoreAPI'
+import { AppData } from '../models/steamStoreAPI'
 import { twitchObject } from '../models/twitchObject'
 
 type GameContextProviderProps = {
@@ -10,8 +10,10 @@ type GameContextProviderProps = {
 }
 
 type GameContextType = {
-  steam: steamStoreAPIObject | null
-  setSteam: React.Dispatch<React.SetStateAction<steamStoreAPIObject | null>>
+  input: string
+  setInput: React.Dispatch<React.SetStateAction<string>>
+  steam: AppData | null
+  setSteam: React.Dispatch<React.SetStateAction<AppData | null>>
   twitch: twitchObject | null
   setTwitch: React.Dispatch<React.SetStateAction<twitchObject | null>>
   itad: itadObject | null
@@ -21,10 +23,11 @@ type GameContextType = {
 export const GameContext = createContext<GameContextType | null>(null)
 
 export const GameContextProvider = ({ children }: GameContextProviderProps) => {
-  const [steam, setSteam] = useState<steamStoreAPIObject | null>(null)
+  const [input, setInput] = useState<string>('')
+  const [steam, setSteam] = useState<AppData | null>(null)
   const [twitch, setTwitch] = useState<twitchObject | null>(null)
   const [itad, setITAD] = useState<itadObject | null>(null)
   return (
-    <GameContext.Provider value={{ steam, setSteam, twitch, setTwitch, itad, setITAD }}>{children}</GameContext.Provider>
+    <GameContext.Provider value={{ input, setInput, steam, setSteam, twitch, setTwitch, itad, setITAD }}>{children}</GameContext.Provider>
   )
 }
