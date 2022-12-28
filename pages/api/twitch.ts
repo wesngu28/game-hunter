@@ -31,6 +31,7 @@ const twitchToken = async (req: NextApiRequest, res: NextApiResponse) => {
 
     const streamJson: twitchObject = await getStream.json()
     streamJson.img = gameJson.data[0].box_art_url
+    streamJson.name = gameJson.data[0].name
     return res.status(200).json(streamJson)
   } catch (err) {
     return res.status(200).json({ error: `Something went wrong, ${err}`})

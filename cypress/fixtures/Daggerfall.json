@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "id": "47699062813",
+      "user_id": "260958709",
+      "user_login": "jaidessa",
+      "user_name": "Jaidessa",
+      "game_id": "1046",
+      "game_name": "The Elder Scrolls II: Daggerfall",
+      "type": "live",
+      "title": "learning to become invisible",
+      "viewer_count": 8,
+      "started_at": "2022-12-28T17:46:24Z",
+      "language": "en",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_jaidessa-{width}x{height}.jpg",
+      "tag_ids": [
+        "6ea6bca4-4712-4ab9-a906-e3336a9d8039"
+      ],
+      "tags": [
+        "vtuber",
+        "lgbt",
+        "autism",
+        "ADHD",
+        "English"
+      ],
+      "is_mature": false
+    },
+    {
+      "id": "47698449165",
+      "user_id": "837283184",
+      "user_login": "cynicalgraybeard",
+      "user_name": "cynicalgraybeard",
+      "game_id": "1046",
+      "game_name": "The Elder Scrolls II: Daggerfall",
+      "type": "live",
+      "title": "Daggerfall for breakfast.",
+      "viewer_count": 6,
+      "started_at": "2022-12-28T14:16:20Z",
+      "language": "en",
+      "thumbnail_url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cynicalgraybeard-{width}x{height}.jpg",
+      "tag_ids": [
+        "6ea6bca4-4712-4ab9-a906-e3336a9d8039"
+      ],
+      "tags": [
+        "ultimadragon",
+        "420",
+        "chill",
+        "WuTang",
+        "DeepVoiceLOL",
+        "English",
+        "PoweredbyCommodore64",
+        "90sMoney"
+      ],
+      "is_mature": false
+    }
+  ],
+  "pagination": {
+    "cursor": "eyJiIjp7IkN1cnNvciI6ImV5SnpJam80TGpNNU1EY3lNVEUwTnpjek9ERXNJbVFpT21aaGJITmxMQ0owSWpwMGNuVmxmUT09In0sImEiOnsiQ3Vyc29yIjoiIn19"
+  },
+  "img": "https://static-cdn.jtvnw.net/ttv-boxart/1046_IGDB-{width}x{height}.jpg",
+  "name": "The Elder Scrolls II: Daggerfall"
+}

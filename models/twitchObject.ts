@@ -2,6 +2,7 @@ export interface twitchObject {
   data: Datum[];
   pagination: Pagination;
   img: string
+  name: string
 }
 
 interface Pagination {

@@ -1,3 +1,5 @@
+const { hostname } = require('os')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
@@ -8,6 +10,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'cdn.akamai.steamstatic.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'static-cdn.jtvnw.net',
       }
     ]
   }
