@@ -1,0 +1,20 @@
+{
+  "list": [
+    {
+      "price_new": 21.24,
+      "price_old": 24.99,
+      "price_cut": 15,
+      "url": "https://store.epicgames.com/p/pc-building-simulator-2?epic_creator_id=585fd9faadb3406ab9a0475bc1d24125&epic_game_id=65a9273ec61f4bb6b94461eb1ce8ec23",
+      "shop": {
+        "id": "epic",
+        "name": "Epic Game Store"
+      },
+      "drm": [
+        "epic"
+      ]
+    }
+  ],
+  "urls": {
+    "game": "https://isthereanydeal.com/#/page:game/info?plain=pcbuildingsimulatorii"
+  }
+}

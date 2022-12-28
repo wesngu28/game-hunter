@@ -1,0 +1,31 @@
+.main {
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.dealcontainer {
+  display: flex;
+  width: 55rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.dealcontainer > div {
+  height: 9rem;
+}
+
+.info {
+  text-align: left;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.platformlink {
+  font-weight: bold;
+  color: darkslategrey;
+  font-size: 1.25rem;
+}

@@ -21,30 +21,27 @@ export default function Form() {
       default: { applist: { apps: any[] } };
     };
     const matchingApp = games.default.applist.apps.find(
-      (game: { appid: number; name: string }) => game.name === text
+      (game: { appid: number; name: string }) => game.name.toLowerCase() === text.toLowerCase()
     );
     if (matchingApp) {
       const game = await fetch(
         `https://store.steampowered.com/api/appdetails?appids=${matchingApp.appid}`
       );
       const gamer: AppInfo = await game.json();
-      gameContext!.setSteam(gamer[matchingApp.appid]);
-      console.log(gamer)
+      gameContext!.setSteam(gamer[matchingApp.appid].data);
     }
+    else gameContext!.setSteam(null)
 
     const twitch = await fetch(`/api/twitch?game=${text}`);
     const twitchJson: twitchObject | { error: string } = await twitch.json();
-    if (twitchObjectChecker(twitchJson)) {
+    if (twitchObjectChecker(twitchJson) && twitchJson.data.length > 0) {
       gameContext!.setTwitch(twitchJson);
-      console.log(twitchJson)
     }
+    else gameContext!.setTwitch(null)
 
     const itad = await fetch(`/api/itad?game=${text}`);
     const itadJson: itadObject = await itad.json();
-    if (!Object.keys(itadJson.data).includes("undefined")) {
-      gameContext!.setITAD(itadJson);
-      console.log(itadJson)
-    }
+    if(itadJson.string) gameContext!.setITAD(itadJson.data[itadJson.string]);
     gameContext!.setInput(text);
   }
 

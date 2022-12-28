@@ -18,15 +18,15 @@ export function Game() {
         >
           {gameContext?.steam.name}
         </a>
-      ) : gameContext?.twitch ? (
+      ) : gameContext?.twitch && gameContext?.twitch.data[0] ? (
         <a
         href={`https://www.twitch.tv/directory/game/${gameContext?.twitch.data[0].game_name}`}
         className={styles.title}>{gameContext?.twitch.name}</a>
       ) : (
         <a className={styles.title}>{gameContext.input}</a>
       )}
-      {gameContext?.steam ? <Steam steam={gameContext.steam} /> : null}
-      {gameContext?.itad ? <Itad itad={gameContext?.itad} /> : null}
+      {gameContext?.steam && <Steam steam={gameContext.steam} />}
+      {gameContext?.itad && <Itad itad={gameContext?.itad} />}
       {gameContext?.twitch ? (
         gameContext?.steam ? (
           <Twitch steam={true} twitch={gameContext.twitch} />
@@ -37,7 +37,3 @@ export function Game() {
     </div>
   ) : null;
 }
-
-// steam header is 460x215
-// need to make twitch header that in the event steam doesn't exist
-// make a placeholder image in event it does not exist

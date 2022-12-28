@@ -1,0 +1,172 @@
+{
+  "list": [
+    {
+      "price_new": 36.94,
+      "price_old": 59.99,
+      "price_cut": 38,
+      "url": "https://www.gamebillet.com/elden-ring?affiliate=1c8adfeb-78f3-4d89-9a91-5b697ec73e37",
+      "shop": {
+        "id": "gamebillet",
+        "name": "GameBillet"
+      },
+      "drm": [
+        "steam"
+      ]
+    },
+    {
+      "price_new": 36.95,
+      "price_old": 59.99,
+      "price_cut": 38,
+      "url": "https://www.gamersgate.com/product/elden-ring/?aff=0c8572c286145f07e7903dee1650f54778ae9149",
+      "shop": {
+        "id": "gamersgate",
+        "name": "GamersGate"
+      },
+      "drm": [
+        "steam"
+      ]
+    },
+    {
+      "price_new": 37.19,
+      "price_old": 59.99,
+      "price_cut": 38,
+      "url": "http://www.jdoqocy.com/click-6305441-13212017?URL=https%3A%2F%2Fwww.fanatical.com%2Fgame%2Felden-ring",
+      "shop": {
+        "id": "bundlestars",
+        "name": "Fanatical"
+      },
+      "drm": [
+        "steam"
+      ]
+    },
+    {
+      "price_new": 37.37,
+      "price_old": 59.99,
+      "price_cut": 38,
+      "url": "https://greenmangaming.sjv.io/c/2545989/1281797/15105?u=https%3A%2F%2Fwww.greenmangaming.com%2Fgames%2Felden-ring-pc%2F",
+      "shop": {
+        "id": "greenmangaming",
+        "name": "GreenManGaming"
+      },
+      "drm": [
+        "steam"
+      ]
+    },
+    {
+      "price_new": 37.99,
+      "price_old": 59.99,
+      "price_cut": 37,
+      "url": "https://us.gamesplanet.com/game/elden-ring-steam-key--4266-1?ref=itad",
+      "shop": {
+        "id": "gamesplanetus",
+        "name": "GamesPlanet US"
+      },
+      "drm": [
+        "steam"
+      ]
+    },
+    {
+      "price_new": 37.99,
+      "price_old": 59.99,
+      "price_cut": 37,
+      "url": "https://www.dlgamer.com/us/games/buy-elden-ring-84810?affil=3429886050",
+      "shop": {
+        "id": "dlgamer",
+        "name": "DLGamer"
+      },
+      "drm": [
+        "steam"
+      ]
+    },
+    {
+      "price_new": 39.49,
+      "price_old": 59.99,
+      "price_cut": 34,
+      "url": "https://www.wingamestore.com/product/13045/ELDEN-RING/?ars=itad",
+      "shop": {
+        "id": "wingamestore",
+        "name": "WinGameStore"
+      },
+      "drm": [
+        "steam"
+      ]
+    },
+    {
+      "price_new": 39.89,
+      "price_old": 59.99,
+      "price_cut": 34,
+      "url": "https://2game.com/us/elden-ring?ref=isthereanydeal&utm_source=Tapfiliate&utm_medium=referral&utm_campaign=isthereanydeal",
+      "shop": {
+        "id": "game2",
+        "name": "2game"
+      },
+      "drm": [
+        "steam"
+      ]
+    },
+    {
+      "price_new": 39.99,
+      "price_old": 59.99,
+      "price_cut": 33,
+      "url": "http://www.tkqlhce.com/click-6305441-10446076?URL=https%3A%2F%2Fwww.newegg.com%2Fbandai-namco-elden-ring-pc%2Fp%2FN82E16832242377",
+      "shop": {
+        "id": "newegg",
+        "name": "Newegg"
+      },
+      "drm": []
+    },
+    {
+      "price_new": 41.39,
+      "price_old": 59.99,
+      "price_cut": 31,
+      "url": "https://www.noctre.com/product/SMBND3378/elden-ring?aff=itad&utm_source=isthereanydeal.com&utm_medium=referral&utm_campaign=isthereanydeal",
+      "shop": {
+        "id": "noctre",
+        "name": "Noctre"
+      },
+      "drm": [
+        "steam"
+      ]
+    },
+    {
+      "price_new": 41.99,
+      "price_old": 59.99,
+      "price_cut": 30,
+      "url": "https://www.humblebundle.com/store/p/eldenring_storefront",
+      "shop": {
+        "id": "humblestore",
+        "name": "Humble Store"
+      },
+      "drm": [
+        "steam"
+      ]
+    },
+    {
+      "price_new": 41.99,
+      "price_old": 59.99,
+      "price_cut": 30,
+      "url": "https://store.steampowered.com/app/1245620/",
+      "shop": {
+        "id": "steam",
+        "name": "Steam"
+      },
+      "drm": [
+        "steam"
+      ]
+    },
+    {
+      "price_new": 41.99,
+      "price_old": 59.99,
+      "price_cut": 30,
+      "url": "https://lt45.net/c/?si=13256&li=1581736&wi=349740&ws=&dl=%2Felden-ring-2",
+      "shop": {
+        "id": "allyouplay",
+        "name": "AllYouPlay"
+      },
+      "drm": []
+    }
+  ],
+  "urls": {
+    "game": "https://isthereanydeal.com/#/page:game/info?plain=eldenring"
+  }
+}
