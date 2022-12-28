@@ -20,6 +20,6 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "cypress/component/Steam.cy.jsx", "cypress/component/Steam.cy.jsx", "cypress/component/steam.cy.js", "cypress/component/steam.cy.js"],
   "exclude": ["node_modules"]
 }
