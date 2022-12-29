@@ -37,8 +37,8 @@ export default function Twitch({ steam, twitch }: Props) {
                 id="stream"
                 key={stream.id}
                 src={`https://player.twitch.tv/?channel=${stream.user_name}&parent=localhost&autoplay=false`}
-                height="173"
-                width="320"
+                height="340"
+                width="640"
                 allowFullScreen
               />
             );
@@ -54,8 +54,8 @@ export default function Twitch({ steam, twitch }: Props) {
             className={styles.random}
             key={twitch.data[rand].id}
             src={`https://player.twitch.tv/?channel=${twitch.data[rand].user_name}&parent=localhost&autoplay=false`}
-            height="300"
-            width="300"
+            height="340"
+            width="640"
             allowFullScreen
           />
         </>
