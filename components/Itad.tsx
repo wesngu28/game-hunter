@@ -19,7 +19,7 @@ export default function Itad({itad}: Props) {
               <div key={platform.shop.name} className={styles.main}>
                 <a className={styles.platformlink} href={platform.url}>{platform.shop.name}</a>
                 <p className={styles.info}>{platform.price_new} - <span>{platform.price_cut}%</span></p>
-                <p className={styles.info}>Current Price: {platform.price_old}</p>
+                <p className={styles.info}>Regular Price: {platform.price_old}</p>
               </div>
             )
           })}

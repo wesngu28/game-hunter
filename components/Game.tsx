@@ -22,11 +22,11 @@ export function Game() {
         <a
         href={`https://www.twitch.tv/directory/game/${gameContext?.twitch.data[0].game_name}`}
         className={styles.title}>{gameContext?.twitch.name}</a>
-      ) : (
+      ) : gameContext?.itad?.list && gameContext.itad.list.length > 0 ? (
         <a className={styles.title}>{gameContext.input}</a>
-      )}
+      ) : <a className={styles.title}>No Results For {gameContext.input}</a>}
       {gameContext?.steam && <Steam steam={gameContext.steam} />}
-      {gameContext?.itad && <Itad itad={gameContext?.itad} />}
+      {gameContext?.itad?.list && gameContext.itad.list.length > 0 && <Itad itad={gameContext?.itad} />}
       {gameContext?.twitch ? (
         gameContext?.steam ? (
           <Twitch steam={true} twitch={gameContext.twitch} />
