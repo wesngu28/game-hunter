@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import { Game } from "../components/Game";
 import { GameContextProvider } from "../contexts/GameProvider";
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <div className={styles.layout}>
       <GameContextProvider>
@@ -19,5 +19,3 @@ const Home: NextPage = () => {
     </div>
   );
 }
-
-export default Home
