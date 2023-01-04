@@ -36,7 +36,7 @@ export default function Twitch({ steam, twitch }: Props) {
               <iframe
                 id="stream"
                 key={stream.id}
-                src={`https://player.twitch.tv/?channel=${stream.user_name}&parent=localhost&autoplay=false`}
+                src={`https://player.twitch.tv/?channel=${stream.user_name}&parent=gameinfohunter.netlify.app&autoplay=false`}
                 height="340"
                 width="640"
                 allowFullScreen
@@ -53,7 +53,7 @@ export default function Twitch({ steam, twitch }: Props) {
             id="random"
             className={styles.random}
             key={twitch.data[rand].id}
-            src={`https://player.twitch.tv/?channel=${twitch.data[rand].user_name}&parent=localhost&autoplay=false`}
+            src={`https://player.twitch.tv/?channel=${twitch.data[rand].user_name}&parent=gameinfohunter.netlify.app&autoplay=false`}
             height="340"
             width="640"
             allowFullScreen
