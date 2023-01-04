@@ -24,11 +24,9 @@ export default function Form() {
       (game: { appid: number; name: string }) => game.name.toLowerCase() === text.toLowerCase()
     );
     if (matchingApp) {
-      const game = await fetch(
-        `https://store.steampowered.com/api/appdetails?appids=${matchingApp.appid}`
-      );
-      const gamer: AppInfo = await game.json();
-      gameContext!.setSteam(gamer[matchingApp.appid].data);
+      const steam = await fetch(`/api/steam?game=${matchingApp.appid}`);
+      const steamJson = await steam.json()
+      gameContext!.setSteam(steamJson[matchingApp.appid].data)
     }
     else gameContext!.setSteam(null)
 
